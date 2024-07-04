@@ -11,6 +11,7 @@ import { logger } from '../../helpers/logger.helper';
 import { ChatData } from '../../interfaces/telegram';
 import { RedisClientAdapter } from '../redis/adapter';
 import {
+  getNews,
   changeBotMood,
   getChatGptModel,
   getUsagePerSpecificDate,
@@ -161,6 +162,7 @@ export class OpenAiClient {
 
         // eslint-disable-next-line @typescript-eslint/ban-types
         const availableFunctions: Record<string, Function> = {
+          getNews,
           getUsagePerSpecificDate,
           changeBotMood: changeBotMood(this.redisClient, chatId),
           setChatGptModel: setChatGptModel(this.redisClient, chatId),

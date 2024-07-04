@@ -86,4 +86,20 @@ export const tools: ChatCompletionTool[] = [
       },
     },
   },
+  {
+    type: 'function',
+    function: {
+      name: 'getNews',
+      description: 'Summerize the current finance and crypto market news an form of an article',
+      /*parameters: {
+        type: 'object',
+        properties: {
+          chatId: {
+            type: 'string',
+            description: 'summerizing news as an Article',
+          },
+        },
+      },*/
+    },
+  },
 ];

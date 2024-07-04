@@ -7,8 +7,8 @@ export const getPrice = async (redisClient: RedisClientAdapter, chatId: number) 
   return 'It`s just a test function for now! Be creative';
 }
 
-export const getNews = async (redisClient: RedisClientAdapter, chatId: number) => {
-  return 'It`s just a test function for now! Be creative';
+export const getNews = async () => {
+  return 'The market is currently a bearmarket and not very stable';
 }
 
 export const getPerformance = async (redisClient: RedisClientAdapter, chatId: number) => {

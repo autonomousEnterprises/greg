@@ -8,6 +8,7 @@ export class RedisClientAdapter {
 
   constructor() {
     this.client = createClient({
+      password: config.REDIS_PASSWORT,
       socket: {
         host: config.REDIS_HOST || '127.0.0.1',
         port: parseInt(config.REDIS_PORT || '6379', 10),
