@@ -23,7 +23,6 @@ export class EnvironmentVarsDto {
   @IsString()
   TELEGRAM_BOT_TOKEN!: string;
 
-  @IsNotEmpty()
   @IsString()
   REDIS_PORT!: string;
 
