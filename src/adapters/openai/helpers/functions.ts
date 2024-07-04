@@ -3,6 +3,30 @@ import { getData } from '../../../helpers/axios.helper';
 import { logger } from '../../../helpers/logger.helper';
 import { RedisClientAdapter } from '../../redis/adapter';
 
+export const getPrice = async (redisClient: RedisClientAdapter, chatId: number) => {
+  return 'It`s just a test function for now! Be creative';
+}
+
+export const getNews = async (redisClient: RedisClientAdapter, chatId: number) => {
+  return 'It`s just a test function for now! Be creative';
+}
+
+export const getPerformance = async (redisClient: RedisClientAdapter, chatId: number) => {
+  return 'It`s just a test function for now! Be creative';
+}
+
+export const predictFuture = async (redisClient: RedisClientAdapter, chatId: number) => {
+  return 'It`s just a test function for now! Be creative';
+}
+
+export const payIn = async (redisClient: RedisClientAdapter, chatId: number) => {
+  return 'It`s just a test function for now! Be creative';
+}
+
+export const payOut = async (redisClient: RedisClientAdapter, chatId: number) => {
+  return 'It`s just a test function for now! Be creative';
+}
+
 export const getUsagePerSpecificDate = async ({
   usageDate,
 }: {

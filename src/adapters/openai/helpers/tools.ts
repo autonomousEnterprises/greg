@@ -70,4 +70,20 @@ export const tools: ChatCompletionTool[] = [
       },
     },
   },
+  {
+    type: 'function',
+    function: {
+      name: 'getPerformance',
+      description: 'This will report the current portfolio performance',
+      parameters: {
+        type: 'object',
+        properties: {
+          wallet: {
+            type: 'string',
+            description: 'displaying current portfolio performance by value and rates for Hours, Days, Weeks and Months as well as short summerized financial situation',
+          },
+        },
+      },
+    },
+  },
 ];
