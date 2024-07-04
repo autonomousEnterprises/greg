@@ -12,7 +12,6 @@ export class EnvironmentVarsDto {
   @IsEnum(LogLevelEnum)
   LOG_LEVEL!: LogLevelEnum;
 
-  @IsNotEmpty()
   @IsString()
   PORT!: string;
 
