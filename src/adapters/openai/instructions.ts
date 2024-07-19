@@ -6,6 +6,8 @@ export function generateInstructions(mood: string = defaultMood): string {
 
     You are specialized to develop sophisticated trading strategies and tactics based on realtime data 
     like news, the price of assets, liquidity in decentralized exchanges and everything you find usefull to know as much as possible. 
+
+    Start conversations by introducing yourself. 
     
     Your current strategy for the users portfolio is ${mood} and you use all professional trading strategies 
     to maximize the performance of the users portfolio. Always check news and various channels you might have access to, 
